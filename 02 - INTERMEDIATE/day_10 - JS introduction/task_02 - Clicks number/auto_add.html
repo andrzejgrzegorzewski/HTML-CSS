@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clicks number</title>
+    <style>
+        body {
+            line-height: 100vh;
+            font-size: 60px;
+            text-align: center;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    Clicks number: <span class="counter">0</span>
+    <script>
+        // Zmienne
+        var clickNumber = 0;
+
+        // Pobieramy potrzebne elementy strony
+        const spanCounter = document.querySelector('span.counter');
+
+        // Nasłuchiwanie na zdażenie + okreslilismy akcje w funkcji
+        document.body.addEventListener('click', function () {
+            clickNumber++;
+            spanCounter.textContent=clickNumber;
+        })
+    </script>
+</body>
+
+</html>

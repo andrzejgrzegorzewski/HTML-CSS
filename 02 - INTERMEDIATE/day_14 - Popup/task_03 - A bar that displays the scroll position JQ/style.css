@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section1 {
+    background-color: aqua;
+    height: 100vh;
+}
+
+.section2 {
+    background-color: darkcyan;
+    height: 500px;
+}
+
+.section3 {
+    background-color: salmon;
+    height: 1290px;
+}
+
+.section4 {
+    background-color: slateblue;
+    height: 150vh;
+}
+
+.info {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 70px;
+    width: 100%;
+    background-color: rgb(200, 200, 200);
+    box-shadow: 0 0 3px 3px gray;
+    text-align: center;
+    line-height: 70px;
+    font-size: 30px;
+    bottom: -75px;
+    transition: .8s;
+}
+
+.info.active{
+    bottom: 0;
+}

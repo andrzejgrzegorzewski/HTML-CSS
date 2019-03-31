@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Walk</title>
+
+    <!-- w=2048/8=256  h=314  -->
+
+    <style>
+        section {
+            position: absolute;
+            left: 0;
+            top: 20px;
+            background-image: url(walking.png);
+            width: 256px;
+            height: 314px;
+            animation: walk 1s steps(8) infinite, move 4s linear infinite alternate, turn 8s infinite linear;
+        }
+
+        @keyframes walk {
+            100% {
+                background-position: -2048px 0;
+            }
+        }
+
+        @keyframes move {
+            100% {
+                left: calc(100% - 256px);
+            }
+        }
+
+        @keyframes turn {
+            0% {
+                transform: rotateY(0);
+            }
+
+            50% {
+                transform: rotateY(0);
+            }
+
+            50.1% {
+                transform: rotateY(180deg);
+            }
+
+            100% {
+                transform: rotateY(180deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section></section>
+</body>
+
+</html>

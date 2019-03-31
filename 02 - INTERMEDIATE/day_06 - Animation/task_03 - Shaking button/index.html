@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Shaking button</title>
+    <style>
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30vw;
+            height: 10vw;
+            font-size: 3vw;
+            border-radius: 50%;
+            background-color: white;
+            border: 3px solid black;
+            color: black;
+            cursor: pointer;
+            animation: shaking 5s linear infinite;
+        }
+
+        @keyframes shaking {
+            0% {
+                transform: translate(-50%, -50%);
+            }
+
+            90% {
+                transform: translate(-50%, -50%);
+            }
+
+            91% {
+                transform: translate(-45%, -50%);
+            }
+
+            92% {
+                transform: translate(-55%, -50%);
+            }
+
+            93% {
+                transform: translate(-45%, -50%);
+            }
+
+            94% {
+                transform: translate(-55%, -50%);
+            }
+
+            95% {
+                transform: translate(-45%, -50%);
+            }
+
+            96% {
+                transform: translate(-55%, -50%);
+            }
+
+            97% {
+                transform: translate(-45%, -50%);
+            }
+
+            98% {
+                transform: translate(-55%, -50%);
+            }
+
+            99% {
+                transform: translate(-45%, -50%);
+            }
+
+            100% {
+                transform: translate(-50%, -50%);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button>Buy now</button>
+</body>
+
+</html>

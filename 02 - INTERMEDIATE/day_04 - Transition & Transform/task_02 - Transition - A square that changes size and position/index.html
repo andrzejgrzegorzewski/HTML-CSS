@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition - A square that changes size and position </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            position: absolute;
+            top: 5vw;
+            left: calc(50% - 80px);
+            width: 160px;
+            padding: 10px 0;
+            background-color: white;
+            font-size: 24px;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: .3s;
+        }
+
+        div.square {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2vw;
+            height: 2vw;   
+            background-color: black;
+
+            /* position 01 */
+            transition: 1s;
+
+            /* position 02 */
+            /* transition: left .5s, top .5s .5s, width .5s .5s, height .5s .5s; */
+        }
+
+        button:hover {
+            background-color: black;
+            color: blue;
+        }
+
+        button:hover+.square {
+            top: calc(100% - 10vw);
+            left: calc(100% - 10vw);
+            width: 10vw;
+            height: 10vw;
+            background-color: blue;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <button>Fly!!!!</button>
+    <div class="square"></div>
+</body>
+
+</html>

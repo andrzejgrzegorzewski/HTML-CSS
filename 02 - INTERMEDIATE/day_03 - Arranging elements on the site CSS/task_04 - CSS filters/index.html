@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS filters</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            font-family: roboto condensed, arial, sans-serif;
+        }
+
+        section {
+            margin: 150px 0;
+            overflow: hidden;
+        }
+
+        div {
+            width: 21%;
+            height: 20vh;
+            margin: 2%;
+            float: left;
+            overflow: hidden;
+            position: relative;
+            transition: .3s;
+        }
+
+        img {
+            display: block;
+            max-width: 200%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: 0.3s;
+        }
+
+        p {
+            text-align: center;
+            font-size: 40px;
+            font-family: arial;
+            line-height: 20vh;
+            background-color: darkcyan;
+            color: goldenrod
+        }
+
+        h1 {
+
+            text-align: center;
+            padding-top: 60px;
+            cursor: pointer;
+            font-size: 30px;
+        }
+
+        h1:hover {
+            text-decoration: underline;
+        }
+
+        /* Blur */
+
+        h1.blur:hover~div {
+            filter: blur(2px);
+        }
+
+        /* Brightness */
+
+        h1.brightness:hover~div {
+            filter: brightness(.2);
+        }
+
+        /* Contrast */
+
+        h1.contrast:hover~div {
+            filter: contrast(2);
+        }
+
+        /* Grayscale */
+
+        h1.grayscale:hover~div {
+            filter: grayscale(50%);
+        }
+
+        /* Opacity */
+
+        h1.opacity:hover~div {
+            filter: opacity(.5);
+        }
+
+        /* Hue-rotate */
+
+        h1.hue-rotate:hover~div {
+            filter: hue-rotate(80deg);
+        }
+
+        /* Sepia */
+
+        h1.sepia:hover~div {
+            filter: sepia(70%);
+        }
+
+        /* Invert */
+
+        h1.invert:hover~div {
+            filter: invert(100%);
+        }
+
+        /* Saturate */
+
+        h1.saturate:hover~div {
+            filter: saturate(1.6);
+        }
+
+        /* Łączenie filtrów */
+
+        h1.contrast-brightness:hover~div {
+            filter: contrast(.8) brightness(1.2) hue-rotate(50deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h2 style="font-size: 60px; margin: 10px 60px;">CSS filters</h2>
+    <section>
+        <h1 class="blur">Blur | Rozmycie</h1>
+        <div>
+            <img src="img/bg1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg3.jpg" alt="">
+        </div>
+        <div>
+            <p>Tekst</p>
+        </div>
+    </section>
+    <section>
+        <h1 class="brightness">Brightness | Jasność</h1>
+        <div>
+            <img src="img/bg1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg3.jpg" alt="">
+        </div>
+        <div>
+            <p>Tekst</p>
+        </div>
+    </section>
+    <section>
+        <h1 class="contrast">Contrast | Kontrast</h1>
+        <div>
+            <img src="img/bg1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg3.jpg" alt="">
+        </div>
+        <div>
+            <p>Tekst</p>
+        </div>
+    </section>
+    <section>
+        <h1 class="grayscale">Grayscale | Skala szarości</h1>
+        <div>
+            <img src="img/bg1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg3.jpg" alt="">
+        </div>
+        <div>
+            <p>Tekst</p>
+        </div>
+    </section>
+    <section>
+        <h1 class="opacity">Opacity | Przezroczystość</h1>
+        <div>
+            <img src="img/bg1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg3.jpg" alt="">
+        </div>
+        <div>
+            <p>Tekst</p>
+        </div>
+    </section>
+    <section>
+        <h1 class="hue-rotate">Hue-rotate | Odcień koloru / koło barw</h1>
+        <div>
+            <img src="img/bg1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg3.jpg" alt="">
+        </div>
+        <div>
+            <p>Tekst</p>
+        </div>
+    </section>
+    <section>
+        <h1 class="sepia">Sepia</h1>
+        <div>
+            <img src="img/bg1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg3.jpg" alt="">
+        </div>
+        <div>
+            <p>Tekst</p>
+        </div>
+    </section>
+    <section>
+        <h1 class="invert">Invert | Odwrócenie</h1>
+        <div>
+            <img src="img/bg1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg3.jpg" alt="">
+        </div>
+        <div>
+            <p>Tekst</p>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="saturate">Saturate | Nasycenie</h1>
+        <div>
+            <img src="img/bg1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg3.jpg" alt="">
+        </div>
+        <div>
+            <p>Tekst</p>
+        </div>
+    </section>
+
+    <section>
+        <h1 class="contrast-brightness">Więcej niż jeden filtr</h1>
+        <div>
+            <img src="img/bg1.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg2.jpg" alt="">
+        </div>
+        <div>
+            <img src="img/bg3.jpg" alt="">
+        </div>
+        <div>
+            <p>Tekst</p>
+        </div>
+    </section>
+
+
+</body>
+
+</html>

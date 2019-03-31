@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Small chess - position</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .board {
+            position: absolute;
+            top: calc(50% - 25vw);
+            left: calc(50% - 25%);
+            width: 50%;
+            height: 50vw;
+            border: 10px solid black;
+            /* font-size: 0; */
+        }
+
+        span {
+            position: absolute;
+            width: 50%;
+            height: 50%;
+        }
+
+        span:nth-child(1) {
+            top: 0;
+            left: 0;
+            background-color: red;
+        }
+
+        span:nth-child(4) {
+            bottom: 0;
+            right: 0;
+            background-color: red;
+        }
+
+        p {
+            position: relative;
+            top: 110vh;
+            line-height: 10vh;
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<div class="board">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<p>My secound task - position.</p>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Small chess - inline-block</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .board {
+            position: absolute;
+            top: calc(50% - 15vw - 10px);
+            left: calc(50% - 15vw - 10px);
+            width: 30vw;
+            height: 30vw;
+            border: 10px solid black;
+            font-size: 0;
+        }
+
+        span {
+            display: inline-block;
+            width: 50%;
+            height: 50%;
+        }
+
+        span:nth-child(1) {
+            background-color: red;
+        }
+
+        span:nth-child(2) {
+            background-color: white;
+        }
+
+        span:nth-child(3) {
+            background-color: white;
+        }
+
+        span:nth-child(4) {
+            background-color: red;
+        }
+
+        p {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+            font-size: 30px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<div class="board">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</div>
+<p>My secound task - inline-block.</p>
+
+<body>
+
+</body>
+
+</html>

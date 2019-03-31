@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Buttons with animation</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button.first {
+            position: relative;
+            margin: 100px;
+            padding: 10px 25px;
+            font-size: 40px;
+            border-style: none;
+            background-color: #fff;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        button.first::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            height: 6%;
+            background-color: #000;
+            transition: .3s linear;
+        }
+
+        button.first:hover::after {
+            left: 0;
+        }
+
+
+        /* ------------------------------ span ----------------------------
+
+        button:hover span {
+            left: 0;
+        }
+
+        span {
+            position: absolute;
+            bottom: 0;
+            left: -100%;
+            width: 100%;
+            height: 3px;
+            background-color: #000;
+            transition: .3s linear;
+        }
+
+------------------------------ span ---------------------------- */
+
+        button.second {
+            position: relative;
+            margin: 100px;
+            padding: 10px 25px;
+            font-size: 40px;
+            border-style: none;
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+            transition: .3s linear;
+        }
+
+        button.second::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 0;
+            bottom: 0;
+            left: 0;
+            background-color: #000;
+            transition: .3s linear;
+            z-index: -1;
+        }
+
+        button.second:hover::before {
+            height: 100%;
+        }
+
+        button.second:hover {
+            color: white;
+        }
+
+        /* ---------------------------------------------------------------- */
+
+        button.third {
+            position: relative;
+            margin: 100px;
+            padding: 10px 25px;
+            font-size: 40px;
+            border-style: none;
+            background-color: transparent;
+            border: 2px solid black;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: 0 0 0 2px white, 0 0 0 4px black;
+            transition: .3s linear .3s;
+        }
+
+        button.third::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 6px;
+            top: 50%;
+            transform: translateY(-50%);
+            right: -100%;
+            background-color: aqua;
+            transition: right 0.3s linear, height 0.3s linear 0.3s;
+            z-index: -1;
+        }
+
+        button.third:hover::before {
+            right: 0;
+            height: 100%;
+        }
+
+        button.third:hover {
+            color: red;
+            box-shadow: 0 0 0 2px red, 0 0 0 4px black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="first">Button</button>
+
+    <!-- ------------------------ span ------------------------
+
+    <buttonclass="first">Button<span></span></button>
+
+    ------------------------ span ------------------------ -->
+
+    <button class="second">Button</button>
+    <button class="third">Button</button>
+
+</body>
+
+</html>

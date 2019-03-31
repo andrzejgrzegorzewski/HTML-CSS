@@ -1,0 +1,35 @@
+/*font-family: 'Roboto', sans-serif;*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 40vh;
+  background-image: url(soap-bubble-3594979_1280.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  padding-left: 20px;
+  background-color: #333;
+  border-bottom: 4px solid royalblue;
+  font-size: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 20px 30px;
+  font-size: 24px;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav a:hover {
+  color: orange;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Button Changing task</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 20vw;
+            height: 7vw;
+            font-size: 3vw;
+            /* border-radius: 50; */
+            background-color: white;
+            border: 3px solid black;
+            color: black;
+            cursor: pointer;
+            animation: shaking 5s linear infinite;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        button span {
+            display: block;
+            line-height: 7vw;
+            position: relative;
+            transition: .3s linear;
+        }
+
+        .buy {
+            left: 0;
+        }
+
+        .sell {
+            left: 20vw;
+            top: -7vw;
+        }
+
+        button:hover span.buy {
+            left: -20vw;
+        }
+
+        button:hover span.sell {
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <button><span class="buy">Buy</span><span class="sell">Sell</span></button>
+</body>
+
+</html>

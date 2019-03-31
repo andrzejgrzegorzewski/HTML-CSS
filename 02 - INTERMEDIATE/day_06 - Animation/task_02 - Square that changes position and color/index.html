@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Square that changes position and color</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            animation: move 2s linear infinite, color 2s linear infinite;
+        }
+
+        @keyframes move {
+            0% {
+                margin-left: 0;
+            }
+
+            20% {
+                margin-left: calc(100% - 200px);
+            }
+
+            50% {
+                margin-left: calc(100% - 200px);
+            }
+
+            70% {
+                margin-left: 0;
+            }
+
+            100% {
+                margin-left: 0;
+            }
+        }
+
+        @keyframes color {
+            0% {
+                background-color: red;
+            }
+
+            10% {
+                background-color: green;
+            }
+
+            50% {
+                background-color: red;
+            }
+
+            90% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

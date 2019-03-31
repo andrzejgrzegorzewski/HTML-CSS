@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Moving square</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 10px;
+            font-size: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: transparent;
+            border: 2px solid black;
+        }
+
+        .square {
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            position: fixed;
+            top: calc(50% - 100px);
+            left: calc(50% - 100px);
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <button>Rotation</button>
+    <div class="square"></div>
+
+    <script>
+        // parametry główne. Za pomocą zmiennych stwórz początkową wartość rotate (zero) i wartość o którą będziesz zmieniał stopnie (o 10 stopnii).
+        let rot = 0;
+        let degrees = 10;
+
+        // pobieramy elementy - pobierz przycisk i div
+
+        let rotation = document.querySelector('button');
+        var divSquare = document.querySelector('div');
+
+        divSquare.style.transition = 1 + "s";
+        divSquare.style.transform = "rotate(" + rot + "deg)";
+
+
+        // podpinamy nasłuchiwanie i umeiszczamy w nim funkcje anonimową. Pamiętaj zmieniamy własciwość transform. Za każdym razie obrót zwiększa się od 10 deg. 
+
+        rotation.addEventListener('click', function () {
+            rot += degrees;
+            divSquare.style.transform = "rotate(" + rot + "deg)";
+
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Price list wigh Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+            line-height: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 40px;
+            text-transform: uppercase;
+            padding: 30px 0;
+        }
+
+        section {
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            max-width: 1200px;
+            justify-content: space-around;
+        }
+
+        .col {
+            flex-basis: 25%;
+            display: flex;
+            flex-direction: column;
+            background-color: darkgrey;
+            text-align: center;
+            height: 100vh;
+            padding: 20px 0 0 0;
+        }
+
+        .col img {
+            width: 60%;
+            align-self: center;
+        }
+
+        .col>* {
+            padding-bottom: 40px;
+        }
+
+        .price {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            color: black;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .col p.price span {
+            color: black;
+            font-size: 30px;
+            line-height: 30px;
+            padding: 10px 0;
+            background-color: #ddd;
+            border: 2px solid black;
+        }
+
+        img {
+            padding: 20px 0;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Wieczór panieński - zaproś naszego trola!</h1>
+    <section>
+        <div class="col">
+            <h2>Opcja 1</h2>
+            <img src="1.png" alt="">
+            <p>(bardzo) Tanio</p>
+            <p class="price"><span>100 dutków</span></p>
+        </div>
+        <div class="col">
+            <h2>Opcja 2</h2>
+            <img src="2.png" alt="">
+            <p>Średnio Tanio</p>
+            <p>Wielka pałka w zestawie</p>
+            <p class="price"><span>300 dutków</span></p>
+        </div>
+        <div class="col">
+            <h2>Opcja 3</h2>
+            <img src="3.png" alt="">
+            <p>Niezbyt tanio</p>
+            <p>Duża moc (wytrzyma noc)</p>
+            <p>Przystojny (jak na trola)</p>
+            <p class="price"><span>500 dutków</span></p>
+        </div>
+    </section>
+</body>
+
+</html>

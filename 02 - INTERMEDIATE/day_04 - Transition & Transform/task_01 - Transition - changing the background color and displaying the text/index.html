@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transition - changing the background color and displaying the text</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bg {
+            background-color: gray;
+            height: 100vh;
+            transition: .5s;
+        }
+
+        .circle {
+            position: absolute;
+            width: 40px;
+            height: 40px;
+            border: 3px solid white;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .bg p {
+            display: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-size: 60px;
+            text-align: center;
+            line-height: 100vh;
+            transition: 5s;
+        }
+
+        div.red {
+            top: 30px;
+            left: 30px;
+            background-color: red;
+        }
+
+        div.green {
+            top: 30px;
+            right: 30px;
+            background-color: green;
+        }
+
+        div.blue {
+            bottom: 30px;
+            left: 30px;
+            background-color: blue;
+        }
+
+        div.orange {
+            bottom: 30px;
+            right: 30px;
+            background-color: orange;
+        }
+
+        div.red:hover~.bg {
+            background-color: red;
+        }
+
+        div.green:hover~.bg {
+            background-color: green;
+        }
+
+        div.blue:hover~.bg {
+            background-color: blue;
+        }
+
+        div.orange:hover~.bg {
+            background-color: orange;
+        }
+
+        div.red:hover~.bg p.red,
+        div.blue:hover~.bg p.blue,
+        div.orange:hover~.bg p.orange,
+        div.green:hover~.bg p.green {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red circle"></div>
+    <div class="green circle"></div>
+    <div class="blue circle"></div>
+    <div class="orange circle"></div>
+    <div class="bg">
+        <p class="red">Red</p>
+        <p class="green">Green</p>
+        <p class="blue">Blue</p>
+        <p class="orange">Orange</p>
+    </div>
+
+</body>
+
+</html>

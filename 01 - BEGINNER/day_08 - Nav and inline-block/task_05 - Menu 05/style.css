@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  height: 30vw;
+  background-color: rgb(220, 220, 220);
+}
+
+nav {
+  background-color: #666;
+  border-top: 4px solid black;
+  border-bottom: 4px solid black;
+}
+
+nav ul {
+  max-width: 1024px;
+  padding: 30px 0 30px 30px;
+  margin: 0 auto;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  display: block;
+  margin-right: 30px;
+  color: white;
+  font-size: 18px;
+  font-family: arial;
+  text-decoration: none;
+  border: 1px solid white;
+  padding: 10px;
+  text-align: center;
+  width: 180px;
+}
+
+nav a:hover {
+  color: chartreuse;
+  border: 1px solid chartreuse;
+}

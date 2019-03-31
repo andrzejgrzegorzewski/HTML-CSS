@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 200vh;
+}
+
+.wrpper {
+    margin: 10px 70px;
+}
+
+.wrapper p {
+    font-size: 18px;
+    line-height: 200%l
+}
+
+.burger {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    font-size: 50px;
+    z-index: 1;
+    transition: .3s linear;
+}
+
+i.off {
+    display: none;
+}
+
+nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 30vh;
+    background-color: black;
+    transition: .3s linear;
+}
+
+nav.off {
+    top: -30vh;
+}
+
+i.fa-arrow-circle-up {
+    color: white;
+}

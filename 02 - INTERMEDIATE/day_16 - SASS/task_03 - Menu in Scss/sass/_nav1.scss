@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    ul {
+        @include box-flex(row, space-around);
+        list-style: none;
+        background-color: yellow;
+
+        li {
+            width: 20%;
+
+            a {
+                display: block;
+                line-height: 50px;
+                text-align: center;
+                color: $color-font;
+                background-color: #000;
+                text-decoration: none;
+                font-size: 30px;
+                font-family: Arial, Helvetica, sans-serif;
+                text-transform: uppercase;
+
+                &:hover {
+                    background-color: red;
+                }
+
+                // or
+                // a:hover
+                //     background-color: red
+            }
+        }
+    }
+}

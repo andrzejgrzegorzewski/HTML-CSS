@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        header {
+            position: relative;
+            height: 400px;
+            background-color: black;
+        }
+
+        div {
+            position: absolute;
+            /* background-color: green; */
+        }
+
+        .left {
+            top: 0;
+            left: 0;
+            border-left: 300px solid green;
+            border-top: 200px solid transparent;
+            border-bottom: 200px solid transparent;
+        }
+
+        .right {
+            top: 0;
+            right: 0;
+            border-right: 300px solid green;
+            border-top: 200px solid transparent;
+            border-bottom: 200px solid transparent;
+        }
+
+        .bottom{
+            bottom: 0;
+            left: 0;
+            border-bottom: 400px solid red;
+            border-left: 50vw solid transparent;
+            border-right: 50vw solid transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="left"></div>
+        <div class="right"></div>
+        <div class="bottom"></div>
+    </header>
+
+</body>
+
+</html>

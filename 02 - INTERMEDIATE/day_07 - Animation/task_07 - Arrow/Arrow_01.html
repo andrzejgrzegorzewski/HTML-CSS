@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Arrow_01</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+
+    <style>
+        button {
+            position: absolute;
+            left: 50%;
+            bottom: 40px;
+            width: 6vw;
+            height: 6vw;
+            border: 3px solid blueviolet;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            background-color: blueviolet;
+            color: white;
+            transition: .2s;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        button:hover {
+            box-shadow: 0 0 13px red;
+        }
+
+        button:hover i {
+            animation-duration: .8s;
+        }
+
+        button i {
+            text-shadow: 0 -10px 0 white, 0 -20px 0 white;
+            animation: move 1s linear infinite;
+            transform: translateY(-50px) scale(5);
+        }
+
+        @keyframes move {
+            100% {
+                transform: translateY(95px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <button class="arrow">
+        <i class="fas fa-angle-down"></i>
+
+    </button>
+</body>
+
+</html>

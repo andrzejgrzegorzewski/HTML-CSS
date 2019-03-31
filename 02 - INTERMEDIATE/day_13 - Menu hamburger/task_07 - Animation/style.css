@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.burger {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 60px;
+    height: 45px;
+    /* background-color: gray; */
+    transition: .2s linear;
+}
+
+.burger:hover {
+    cursor: pointer;
+}
+
+.burger span {
+    position: absolute;
+    width: 100%;
+    height: 10px;
+    background-color: #000;
+    left: 0;
+    transition: top .2s .2s linear, bottom .2s .2s linear, opacity .2s .2s linear, transform .2s .4s linear;
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+}
+
+.burger.active span:nth-child(1) {
+    top: calc(50% - 5px);
+    transform: rotate(45deg);
+}
+
+.burger span:nth-child(2) {
+    top: calc(50% - 5px);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.burger span:nth-child(3) {
+    bottom: 0;
+}
+
+.burger.active span:nth-child(3) {
+    bottom: calc(50% - 5px);
+    transform: rotate(-45deg);
+}
+
+.burger.active {
+    transform: rotate(90deg);
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clock in CSS</title>
+    <style>
+        .clock {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40vw;
+            height: 40vw;
+            border-radius: 50%;
+            background-color: red;
+            cursor: pointer;
+        }
+
+        .hand {
+            position: absolute;
+            top: calc(50% - 9.5vw);
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(0deg);
+            width: .6vw;
+            height: 19vw;
+            background-color: black;
+            border-radius: 30% 50% 30% 50%;
+            transform-origin: 50% 100%;
+            transition: 6s steps(60);
+        }
+
+        .clock:hover .hand {
+            transform: translate(-50%, -50%) rotate(360deg);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="clock">
+        <div class="hand"></div>
+    </div>
+</body>
+
+</html>

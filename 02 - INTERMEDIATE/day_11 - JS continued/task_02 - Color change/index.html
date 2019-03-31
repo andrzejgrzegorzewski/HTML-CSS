@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color change</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+        }
+
+        .S1,
+        .S2 {
+            flex-basis: 50%;
+            height: 100vh;
+            transition: .5s;
+        }
+
+        .red {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+</body>
+<div class="S1 red"></div>
+<div class="S2"></div>
+
+<script>
+    var firstDiv = document.querySelector('.S1');
+    var secondDiv = document.querySelector('.S2');
+
+    function changeColor() {
+        firstDiv.classList.toggle('red');
+        secondDiv.classList.toggle('red');
+
+        // or
+
+        // this.classList.toggle('red');
+    }
+
+    firstDiv.addEventListener('click', changeColor);
+    secondDiv.addEventListener('click', changeColor);
+</script>
+
+</html>

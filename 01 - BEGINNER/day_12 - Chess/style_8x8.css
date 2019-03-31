@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.board::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.board {
+  width: 400px;
+  /*  border: 10px solid black;*/
+  box-shadow: 0 0 0 12px red, 0 0 0 24px white, 0 0 0 36px black;
+
+
+  margin: 100px auto 50px;
+  /*    font-size: 0;  jak nie stosujemy clearfix pseudoelementu i float: left*/
+}
+
+.board div {
+  /*  display: inline-block; jak nie stosujemy clearfix pseudoelementu i float: left*/
+  float: left;
+  width: 50px;
+  height: 50px;
+}
+
+
+.board div:nth-child(2) {
+  background-color: black;
+}
+
+.board div:nth-child(4) {
+  background-color: black;
+}
+
+.board div:nth-child(6) {
+  background-color: black;
+}
+
+.board div:nth-child(8) {
+  background-color: black;
+}
+
+.board div:nth-child(9) {
+  background-color: black;
+}
+
+.board div:nth-child(11) {
+  background-color: black;
+}
+
+.board div:nth-child(13) {
+  background-color: black;
+}
+
+.board div:nth-child(15) {
+  background-color: black;
+}
+
+.board div:nth-child(18) {
+  background-color: black;
+}
+
+.board div:nth-child(20) {
+  background-color: black;
+}
+
+.board div:nth-child(22) {
+  background-color: black;
+}
+
+.board div:nth-child(24) {
+  background-color: black;
+}
+
+.board div:nth-child(25) {
+  background-color: black;
+}
+
+.board div:nth-child(27) {
+  background-color: black;
+}
+
+.board div:nth-child(29) {
+  background-color: black;
+}
+
+.board div:nth-child(31) {
+  background-color: black;
+}
+
+.board div:nth-child(34) {
+  background-color: black;
+}
+
+.board div:nth-child(36) {
+  background-color: black;
+}
+
+.board div:nth-child(38) {
+  background-color: black;
+}
+
+.board div:nth-child(40) {
+  background-color: black;
+}
+
+.board div:nth-child(41) {
+  background-color: black;
+}
+
+.board div:nth-child(43) {
+  background-color: black;
+}
+
+.board div:nth-child(45) {
+  background-color: black;
+}
+
+.board div:nth-child(47) {
+  background-color: black;
+}
+
+.board div:nth-child(50) {
+  background-color: black;
+}
+
+.board div:nth-child(52) {
+  background-color: black;
+}
+
+.board div:nth-child(54) {
+  background-color: black;
+}
+
+.board div:nth-child(56) {
+  background-color: black;
+}
+
+.board div:nth-child(57) {
+  background-color: black;
+}
+
+.board div:nth-child(59) {
+  background-color: black;
+}
+
+.board div:nth-child(61) {
+  background-color: black;
+}
+
+.board div:nth-child(63) {
+  background-color: black;
+}
+
+h1 {
+  text-align: center;
+  font-family: arial, sans-serif;
+}

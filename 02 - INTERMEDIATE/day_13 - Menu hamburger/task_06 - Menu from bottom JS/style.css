@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 150vh;
+}
+
+.wrap {
+    margin: 20px 80px;
+}
+
+.wrap p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+nav {
+    position: fixed;
+    bottom: -270px;
+    left: 0;
+    right: 0;
+    background-color: #000;
+    height: 300px;
+    transition: .2s linear;
+}
+
+.arrow i {
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 1;
+    font-size: 50px;
+    transition: .2s linear;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+
+.fas.on {
+    transform: rotate(180deg);
+    bottom: 325px;
+}
+
+nav.on {
+    bottom: 0;
+}

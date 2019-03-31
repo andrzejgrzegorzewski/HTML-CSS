@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Typing text</title>
+
+    <style>
+        h1 {
+            display: inline-block;
+            font-size: 60px;
+            margin: 40px;
+            font-family: 'Courier New', Courier, monospace;
+            position: relative;
+            overflow: hidden;
+        }
+
+        h1::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            background-color: white;
+            height: 100%;
+            width: 100%;
+            border-left: 3px solid black;
+            animation: cursor .6s infinite steps(14), typing 2s infinite steps(14,start);
+        }
+    
+        @keyframes cursor {
+            0%{
+                border-color: transparent;
+            }
+
+            10%{
+                border-color: transparent;
+            }
+
+            25%{
+                border-color: black;
+            }
+
+            75%{
+                border-color: black;
+            }
+
+            90%{
+                border-color: transparent;
+            }
+
+            100%{
+                border-color: transparent;
+            }
+        }
+
+        @keyframes typing {
+            100%{
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Good morning!</h1>
+</body>
+
+</html>

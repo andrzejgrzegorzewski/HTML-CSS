@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    /*    strona powyżej 1600px*/
+
+    body {
+      background-color: rgb(255, 0, 0);
+
+    }
+
+    div {
+      font-size: 60px;
+      color: white;
+    }
+
+    div.s1 {
+      display: block;
+    }
+
+    div.s2 {
+      display: none;
+    }
+
+    div.s3 {
+      display: none;
+    }
+
+    @media (max-width: 1600px) {
+      body {
+        background-color: rgb(255, 255, 0);
+      }
+      div.s1 {
+        display: none;
+      }
+      div.s2 {
+        display: block;
+        color: black;
+      }
+    }
+
+    @media(max-width: 1024px) {
+      body {
+        background-color: rgb(100, 50, 150);
+
+      }
+      div.s2 {
+        color: white;
+      }
+    }
+
+    @media(max-width: 768px) {
+      body {
+        background-color: rgb(80, 150, 10);
+      }
+      div.s2 {
+        display: none;
+      }
+
+      div.s3 {
+        display: block;
+      }
+    }
+
+
+    @media(max-width: 360px) {
+      body {
+        background-color: rgb(30, 30, 200);
+      }
+
+      div.s3 {
+        display: none;
+      }
+
+      div.s4 {
+        display: block;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="s1">powyzej 1601 px</div>
+  <div class="s2">1600 - 768 px</div>
+  <div class="s3">768 - 360 px</div>
+  <div class="s4">ponizej 360 px i mniej</div>
+</body>
+
+</html>

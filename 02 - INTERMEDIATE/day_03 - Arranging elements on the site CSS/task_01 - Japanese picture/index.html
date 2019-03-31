@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Japanese picture</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .picture {
+            position: absolute;
+            width: 160vh;
+            height: 90vh;
+            top: calc(50% - 90vh/2);
+            left: calc(50% - 160vh/2);
+            background-color: lightblue;
+            /* margin: 100px auto; */
+            overflow: hidden;
+        }
+
+        img {
+            position: absolute;
+            display: none;
+        }
+
+        img:nth-child(1) {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -10%;
+        }
+
+        img:nth-child(2) {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -30%;
+        }
+
+        img:nth-child(3) {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -50%;
+        }
+
+        img:nth-child(4) {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -45%;
+        }
+
+        img:nth-child(5) {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -55%;
+        }
+
+        img:nth-child(6) {
+            display: block;
+            width: 100%;
+            left: 0;
+            bottom: -85%;
+        }
+
+        img:nth-child(7) {
+            display: block;
+            width: 10%;
+            left: 5%;
+            top: 5%;
+        }
+
+        img:nth-child(8) {
+            display: block;
+            width: 30%;
+            left: -5%;
+            top: 10%;
+        }
+
+        img:nth-child(9) {
+            display: block;
+            width: 40%;
+            right: 5%;
+            top: 10%;
+        }
+
+        img:nth-child(10) {
+            display: block;
+            width: 30%;
+            right: 0;
+            top: 20%;
+        }
+
+        img:nth-child(11) {
+            display: block;
+            width: 7%;
+            left: 10%;
+            bottom: 10%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="picture">
+        <!-- img[src=img/japan$.png]*11 -->
+
+        <img src="img/japan1.png" alt="">
+        <img src="img/japan2.png" alt="">
+        <img src="img/japan3.png" alt="">
+        <img src="img/japan4.png" alt="">
+        <img src="img/japan5.png" alt="">
+        <img src="img/japan6.png" alt="">
+        <img src="img/japan7.png" alt="">
+        <img src="img/japan8.png" alt="">
+        <img src="img/japan9.png" alt="">
+        <img src="img/japan10.png" alt="">
+        <img src="img/japan11.png" alt="">
+    </div>
+
+</body>
+
+</html>

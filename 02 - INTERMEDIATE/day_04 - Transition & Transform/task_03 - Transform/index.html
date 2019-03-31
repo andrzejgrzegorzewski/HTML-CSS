@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Transform</title>
+
+    <style>
+        img.first {
+            width: 200px;
+            /* transform: rotate(0); */
+            /* transform: translate(100px,20px); */
+            /* transform: rotate(0) scale(1) ; */
+            transform: skew(20deg, 20deg);
+            box-shadow: 0 0 5px 10px;
+            transition: 1s linear;
+        }
+
+        img.first:hover {
+            /* transform: rotate(360deg); */
+            transform: rotate(360deg) scale(1.5) translate(100px, 20px);
+        }
+
+        /* centrowanie zdjecia */
+        img.second {
+            position: absolute;
+            width: 20%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae odit aliquam provident blanditiis,
+        consequatur necessitatibus ab aliquid rem maxime quos quaerat quas cumque consectetur sed expedita eius aut
+        minus soluta!</p>
+    <img class="first" src="tomato.jpg" alt="tomato">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat cum eos, accusamus quae suscipit quisquam,
+        sapiente architecto aut quos tenetur provident deserunt ipsum esse repellendus molestias dolorem tempore,
+        voluptates dignissimos!</p>
+    <img class="second" src="tomato.jpg" alt="tomato">
+
+
+</body>
+
+</html>

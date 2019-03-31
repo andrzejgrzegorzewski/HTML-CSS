@@ -1,0 +1,52 @@
+header {
+  height: 40vh;
+  background-color: red;
+}
+
+div.small {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #000;
+}
+
+div.medium {
+  width: 250px;
+  height: 250px;
+  border-radius: 70%;
+  background-color: #000;
+}
+
+div.large {
+  width: 350px;
+  height: 350px;
+  border-radius: 20%;
+  background-color: #000;
+}
+
+nav {
+  height: 30px;
+}
+
+nav ul {
+  padding: 10px;
+  color: red;
+}
+
+div {
+  font-size: 20px;
+}
+
+section div p {
+  font-size: 40px;
+}
+
+div nav {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transform: translate(20%);
+          transform: translate(20%);
+}
+/*# sourceMappingURL=style.css.map */

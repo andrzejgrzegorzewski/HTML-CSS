@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Text size change.</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            margin: 10vh;
+            padding: 10px 0;
+            font-size: 40px;
+            width: 20vw;
+            background-color: #fff;
+            border: 2px solid black;
+            border-radius: 5%;
+            cursor: pointer;
+        }
+
+        h1 {
+            position: absolute;
+            margin: 0;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(1);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 80px;
+            padding: 40px;
+            border-radius: 50%;
+            transition: .3s linear;
+        }
+
+        h1.bigg {
+            transform: translate(-50%, -50%) scale(2);
+        }
+
+        h1.smaller {
+            transform: translate(-50%, -50%) scale(.5);
+        }
+
+        h1.border {
+            border: 20px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <button class="bigger">2 x bigger</button>
+    <button class="smaller">2 x smaller</button>
+    <button class="border">Border</button>
+    <h1>Text</h1>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+    <script>
+        $('.bigger').click(function () {
+            $('h1').toggleClass("bigg");
+        })
+
+        $('.smaller').click(function () {
+            $('h1').toggleClass("smaller");
+        })
+
+        $('.border').click(function () {
+            $('h1').toggleClass("border");
+        })
+    </script>
+</body>
+
+</html>

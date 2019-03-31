@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sdquare adding</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding: 30px 60px;
+        }
+
+        button {
+            border: 3px solid black;
+            text-transform: uppercase;
+            padding: 15px 30px;
+            color: black;
+            background-color: transparent;
+            margin: 0 30px 30px 0;
+            font-size: 40px;
+            cursor: pointer;
+        }
+
+        .box {
+            float: left;
+            background-color: aqua;
+            width: 100px;
+            height: 100px;
+            animation: love 0.2s linear both;
+
+        }
+
+        @keyframes love {
+            0% {
+                width: 0;
+                height: 0;
+                transform: rotate(0);
+            }
+
+            100% {
+                width: 100px;
+                height: 100px;
+                transform: rotate(3600deg);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <button class="js">Add JS</button>
+    <button class="jq">Add JQ</button>
+    <br>
+
+    <script src="jquery-3.3.1.min.js"></script>
+
+    <script>
+        let buttonJS = document.querySelector('.js');
+
+        buttonJS.addEventListener('click', function () {
+
+            //stworzenie diva i nazwie divItem
+            let divItem = document.createElement('div');
+
+            //dodanie klasy box do naszego diva divItem
+            // divItem.className = "box";
+            // or
+            // divItem.classList.add('box');
+            //or 
+            divItem.setAttribute('class', 'box');
+
+
+            document.body.appendChild(divItem);
+
+            //all in one line
+            // document.body.appendChild(document.createElement('div').setAttribute('class', 'box'));
+        })
+
+        // --------------------------------------------------------------------
+        // jQuery
+
+        // $('.jq') - znalezienie, pobranie button .jq z naszego dokumentu
+        // .on ('click',function(){}) - ustawienie nasłuchiwania w .on na click - tak jak w JS addEventLisnen('click',function(){})
+        // $('body').append('<div class="box">') - stworzenie i dodanie w body elementu div z class box
+
+        $('.jq').on('click', function () {
+            $('body').append('<div class="box">');
+        })
+    </script>
+</body>
+
+</html>
