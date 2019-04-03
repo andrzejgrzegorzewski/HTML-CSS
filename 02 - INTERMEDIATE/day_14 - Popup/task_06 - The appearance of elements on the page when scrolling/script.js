@@ -52,11 +52,11 @@ $(window).on('scroll', function () {
     const op1Height = $op1.outerHeight();
     const op2Height = $op2.outerHeight();
 
-    if (scrollValue > (op1FromTop + op1Height / 2 - windowHeight)) {
+    if (scrollValue > (op1FromTop + op1Height / 4 - windowHeight)) {
         $op1.addClass('active');
     }
 
-    if (scrollValue > (op2FromTop + op2Height / 2 - windowHeight)) {
+    if (scrollValue > (op2FromTop + op2Height / 4 - windowHeight)) {
         $op2.addClass('active');
     }
 
